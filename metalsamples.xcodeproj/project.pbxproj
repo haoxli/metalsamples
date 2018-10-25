@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AC2338221801C57004D42AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2338121801C57004D42AE /* AppDelegate.m */; };
+		9AC2338521801C57004D42AE /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2338421801C57004D42AE /* Renderer.m */; };
+		9AC2338821801C57004D42AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2338721801C57004D42AE /* ViewController.m */; };
+		9AC2338A21801C57004D42AE /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2338921801C57004D42AE /* Shaders.metal */; };
+		9AC2339021801C58004D42AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC2338E21801C58004D42AE /* Main.storyboard */; };
+		9AC2339321801C58004D42AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2339221801C58004D42AE /* main.m */; };
+		9AC2339C21805627004D42AE /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC2339B21805627004D42AE /* MetalKit.framework */; };
+		9AC233A521819935004D42AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC233A421819935004D42AE /* AppDelegate.m */; };
+		9AC233A821819935004D42AE /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC233A721819935004D42AE /* Renderer.m */; };
+		9AC233AB21819935004D42AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC233AA21819935004D42AE /* ViewController.m */; };
+		9AC233AD21819935004D42AE /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9AC233AC21819935004D42AE /* Shaders.metal */; };
+		9AC233B321819935004D42AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC233B121819935004D42AE /* Main.storyboard */; };
+		9AC233B621819935004D42AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC233B521819935004D42AE /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AC2337D21801C57004D42AE /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC2338021801C57004D42AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AC2338121801C57004D42AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AC2338321801C57004D42AE /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9AC2338421801C57004D42AE /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		9AC2338621801C57004D42AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9AC2338721801C57004D42AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9AC2338921801C57004D42AE /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9AC2338B21801C57004D42AE /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		9AC2338F21801C58004D42AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC2339121801C58004D42AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC2339221801C58004D42AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AC2339421801C58004D42AE /* HelloTriangle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloTriangle.entitlements; sourceTree = "<group>"; };
+		9AC2339B21805627004D42AE /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		9AC233A121819935004D42AE /* BasicBuffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicBuffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC233A321819935004D42AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AC233A421819935004D42AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AC233A621819935004D42AE /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9AC233A721819935004D42AE /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		9AC233A921819935004D42AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9AC233AA21819935004D42AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9AC233AC21819935004D42AE /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9AC233AE21819935004D42AE /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		9AC233B221819935004D42AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC233B421819935004D42AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC233B521819935004D42AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AC233B721819935004D42AE /* BasicBuffers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicBuffers.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC2337A21801C57004D42AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC2339C21805627004D42AE /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC2339E21819935004D42AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AC2337421801C57004D42AE = {
+			isa = PBXGroup;
+			children = (
+				9AC2337F21801C57004D42AE /* HelloTriangle */,
+				9AC233A221819935004D42AE /* BasicBuffers */,
+				9AC2337E21801C57004D42AE /* Products */,
+				9AC2339A21805627004D42AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC2337E21801C57004D42AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC2337D21801C57004D42AE /* HelloTriangle.app */,
+				9AC233A121819935004D42AE /* BasicBuffers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC2337F21801C57004D42AE /* HelloTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				9AC2338021801C57004D42AE /* AppDelegate.h */,
+				9AC2338121801C57004D42AE /* AppDelegate.m */,
+				9AC2338321801C57004D42AE /* Renderer.h */,
+				9AC2338421801C57004D42AE /* Renderer.m */,
+				9AC2338621801C57004D42AE /* ViewController.h */,
+				9AC2338721801C57004D42AE /* ViewController.m */,
+				9AC2338921801C57004D42AE /* Shaders.metal */,
+				9AC2338B21801C57004D42AE /* ShaderTypes.h */,
+				9AC2338E21801C58004D42AE /* Main.storyboard */,
+				9AC2339121801C58004D42AE /* Info.plist */,
+				9AC2339221801C58004D42AE /* main.m */,
+				9AC2339421801C58004D42AE /* HelloTriangle.entitlements */,
+			);
+			path = HelloTriangle;
+			sourceTree = "<group>";
+		};
+		9AC2339A21805627004D42AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AC2339B21805627004D42AE /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AC233A221819935004D42AE /* BasicBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				9AC233A321819935004D42AE /* AppDelegate.h */,
+				9AC233A421819935004D42AE /* AppDelegate.m */,
+				9AC233A621819935004D42AE /* Renderer.h */,
+				9AC233A721819935004D42AE /* Renderer.m */,
+				9AC233A921819935004D42AE /* ViewController.h */,
+				9AC233AA21819935004D42AE /* ViewController.m */,
+				9AC233AC21819935004D42AE /* Shaders.metal */,
+				9AC233AE21819935004D42AE /* ShaderTypes.h */,
+				9AC233B121819935004D42AE /* Main.storyboard */,
+				9AC233B421819935004D42AE /* Info.plist */,
+				9AC233B521819935004D42AE /* main.m */,
+				9AC233B721819935004D42AE /* BasicBuffers.entitlements */,
+			);
+			path = BasicBuffers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC2337C21801C57004D42AE /* HelloTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC2339721801C58004D42AE /* Build configuration list for PBXNativeTarget "HelloTriangle" */;
+			buildPhases = (
+				9AC2337921801C57004D42AE /* Sources */,
+				9AC2337A21801C57004D42AE /* Frameworks */,
+				9AC2337B21801C57004D42AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangle;
+			productName = HelloTriangle;
+			productReference = 9AC2337D21801C57004D42AE /* HelloTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AC233A021819935004D42AE /* BasicBuffers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC233B821819935004D42AE /* Build configuration list for PBXNativeTarget "BasicBuffers" */;
+			buildPhases = (
+				9AC2339D21819935004D42AE /* Sources */,
+				9AC2339E21819935004D42AE /* Frameworks */,
+				9AC2339F21819935004D42AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicBuffers;
+			productName = BasicBuffers;
+			productReference = 9AC233A121819935004D42AE /* BasicBuffers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC2337521801C57004D42AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = WebQA;
+				TargetAttributes = {
+					9AC2337C21801C57004D42AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9AC233A021819935004D42AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 9AC2337821801C57004D42AE /* Build configuration list for PBXProject "metalsamples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC2337421801C57004D42AE;
+			productRefGroup = 9AC2337E21801C57004D42AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC2337C21801C57004D42AE /* HelloTriangle */,
+				9AC233A021819935004D42AE /* BasicBuffers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC2337B21801C57004D42AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC2339021801C58004D42AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC2339F21819935004D42AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC233B321819935004D42AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC2337921801C57004D42AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC2339321801C58004D42AE /* main.m in Sources */,
+				9AC2338A21801C57004D42AE /* Shaders.metal in Sources */,
+				9AC2338521801C57004D42AE /* Renderer.m in Sources */,
+				9AC2338821801C57004D42AE /* ViewController.m in Sources */,
+				9AC2338221801C57004D42AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC2339D21819935004D42AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC233B621819935004D42AE /* main.m in Sources */,
+				9AC233AD21819935004D42AE /* Shaders.metal in Sources */,
+				9AC233A821819935004D42AE /* Renderer.m in Sources */,
+				9AC233AB21819935004D42AE /* ViewController.m in Sources */,
+				9AC233A521819935004D42AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AC2338E21801C58004D42AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC2338F21801C58004D42AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC233B121819935004D42AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC233B221819935004D42AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AC2339521801C58004D42AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AC2339621801C58004D42AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AC2339821801C58004D42AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloTriangle/HelloTriangle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ3CLYGBAC;
+				INFOPLIST_FILE = HelloTriangle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.HelloTriangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		9AC2339921801C58004D42AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloTriangle/HelloTriangle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ3CLYGBAC;
+				INFOPLIST_FILE = HelloTriangle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.HelloTriangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		9AC233B921819935004D42AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BasicBuffers/BasicBuffers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ3CLYGBAC;
+				INFOPLIST_FILE = BasicBuffers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.BasicBuffers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AC233BA21819935004D42AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BasicBuffers/BasicBuffers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ3CLYGBAC;
+				INFOPLIST_FILE = BasicBuffers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.BasicBuffers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC2337821801C57004D42AE /* Build configuration list for PBXProject "metalsamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC2339521801C58004D42AE /* Debug */,
+				9AC2339621801C58004D42AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC2339721801C58004D42AE /* Build configuration list for PBXNativeTarget "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC2339821801C58004D42AE /* Debug */,
+				9AC2339921801C58004D42AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC233B821819935004D42AE /* Build configuration list for PBXNativeTarget "BasicBuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC233B921819935004D42AE /* Debug */,
+				9AC233BA21819935004D42AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AC2337521801C57004D42AE /* Project object */;
+}
